@@ -18,7 +18,7 @@ body {
 }
 	body { 
 		/* Set background image POSITION and REPEAT here! */
-		background-image: url(gfx/bodyBG.jpg);		
+		background-image: url("gfx/bodyBG.jpg");		
 	}
 	
 /* 2.HEADINGS */
@@ -249,7 +249,7 @@ p.m-logo {
 	border-top: 1px solid #000000;
 }
 .skinBg {
-	background-image:url(gfx/skingBgBG.jpg);
+	background-image:url("gfx/skingBgBG.jpg");
 }
 #wrapper-footer {
 	background-color:#000000;
@@ -441,7 +441,7 @@ ul#nav {
 	padding: 0;
 	width:auto;
 	display: inline-block;
-	background-image: url(gfx/ulNavBG.jpg);
+	background-image: url("gfx/ulNavBG.jpg");
 	border: solid #000000;
 	border-width: 0 1px 1px 1px;
 	box-shadow: 0 1px 2px -1px #FFFFFF;
@@ -485,7 +485,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		white-space: nowrap;
 		text-transform: capitalize;
 		color: #b5b5b5;
-		background-image: url(gfx/ulNavLiAbg.png);
+		background-image: url("gfx/ulNavLiAbg.png");
 		text-shadow: 0px 1px 0 #222222;
 		-webkit-text-shadow: 0px 1px 0 #222222;
 	}
@@ -500,7 +500,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	
 /* start second level nav items */
 		ul#nav li ul { /* second-level lists */
-			background-image: url(gfx/ulNavBG.jpg);
+			background-image: url("gfx/ulNavBG.jpg");
 			position: absolute;
 			width: 220px;
 			left: -999em; /* using left instead of display to hide menus because display: none isnt read by screen readers */
@@ -1539,7 +1539,7 @@ div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inne
 	}
 }
 div.horizontal.callouts {
-	background-image:url(gfx/calloutsBG.jpg);
+	background-image:url("gfx/calloutsBG.jpg");
 	border: 1px solid;
 	border-color: #0f0f0f #3c3e3f transparent #171718;
 	margin-bottom: 15px;
