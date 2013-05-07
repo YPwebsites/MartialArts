@@ -2,24 +2,23 @@
 <html>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <head>
-<title>Responsive Structure</title>
+<title>Martial Arts Template - Echo Tags</title>
 <link href="template.css" rel="stylesheet" type="text/css" />
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 
 
 <!-- BEGIN HTML COPY/PASTE -->
 
-
 <!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-<script src="gfx/jquery.scroll-follow.js"></script>
-<script src="gfx/jquery.easing.1.3"></script>
+<script src="http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/jquery.scroll-follow.js"></script>
+<script src="http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/jquery.easing.1.3"></script>
 <!-- script for scroll to top, IE drop down menu fix, and mobile quick nav link script -->
-<script type="text/javascript" src="gfx/yp-scripts.js"></script>
+<script type="text/javascript" src="http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/yp-scripts.js"></script>
 <!-- mobile navigation script -->
-<script type="text/javascript" src="gfx/calloutsAdj.js"></script>
+<script type="text/javascript" src="http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/calloutsAdj.js"></script>
 <script>
 $(document).ready(function(){
 	$("#navTab").click(function(){
@@ -39,12 +38,15 @@ $(function(){
 <!--[if !IE]> -->
 <script type="text/javascript">
 $(function(){
+	$('div.imgOverlay').css("display", "block");
 	var oldCalloutHeight = $('div.callouts').height();
 	if( $(window).width() < 479 ) {
 		var cta2MargTop = ( $('div.horizontal.callouts div.vertical div.diy-f-spot.callout2 img').height() / 2 ) + 15;
 		$('div.horizontal.callouts div.vertical div.diy-f-spot.callout1').css("margin-bottom", cta2MargTop + "px");	
 	}
-	calloutsAdj();
+	window.setTimeout(function() {
+        	calloutsAdj();
+    	
 	$(window).resize(function() {
 		if( $(window).width() < 479 ) {
 			var cta2MargTop = ( $('div.horizontal.callouts div.vertical div.diy-f-spot.callout2 img').height() / 2 ) + 15;
@@ -53,9 +55,10 @@ $(function(){
 			$('div.horizontal.callouts div.vertical div.diy-f-spot.callout1').css("margin-bottom", "0px");		
 		}
 		if ( $('div.callouts').height() != oldCalloutHeight ) {
-        	calloutsAdj();
-        }
-    });
+        		calloutsAdj();
+        	}
+    	});
+    }, 100);
 });
 </script>
 <!-- <![endif]-->
@@ -139,7 +142,6 @@ $(function(){
     
     	<!-- content area -->
         <section id="content" class="sixteen columns">
-        	<h2>{CONTENT_TITLE_ONLY}</h2>
         	{CONTENT_DATA}
             
         </section> <!-- end content area -->

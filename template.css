@@ -1,11 +1,16 @@
-/*YP Horizontal Framework A v4.1 - 4-19-2013
+/*
+Martial Arts Template - 5/3/2013
+Design by Marc Benejan, Development by Conor Kelly
+ck7630@yp.com
+
+YP Horizontal Framework A v4.1 - 4-19-2013
 fixed calculators and typography 
 MODULE STYLING  added 4/4/2013
 Updated mobile menu 4/5/2013
 Markup-Cleanup 4/19/2013
  */
 
-@import url("gfx/wp-skeleton.css"); 
+@import url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/wp-skeleton.css"); 
 
 header, footer, nav, section, article {display: block;}
 
@@ -18,7 +23,7 @@ body {
 }
 	body { 
 		/* Set background image POSITION and REPEAT here! */
-		background-image: url("gfx/bodyBG.jpg");		
+		background-image: url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/bodyBG.jpg");		
 	}
 	
 /* 2.HEADINGS */
@@ -37,7 +42,7 @@ h6, h6 span, h6 font span {
 h1, h1 span, h1 font span { 
 	font-size : 36px; 
 }
-h2, h2 span, h2 font span{ 	
+h2, h2 span, h2 font span, h2 div { 	
 	font-size : 32px; 
 }
 h3, h3 span, h3 font span {	
@@ -249,7 +254,7 @@ p.m-logo {
 	border-top: 1px solid #000000;
 }
 .skinBg {
-	background-image:url("gfx/skingBgBG.jpg");
+	background-image:url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/skingBgBG.jpg");
 }
 #wrapper-footer {
 	background-color:#000000;
@@ -270,14 +275,14 @@ p.m-logo {
 }
 
 /* logo */
-@media only screen and (min-width: 768px) {
+
 	#logo {
 		position: absolute;
 		left: 0px;
 		top: 70px;
 		z-index: 100;
 	}
-}
+
 #logo a, #logo a:hover, #logo a div, #logo a:hover div {
 	text-decoration:none;
 	color:#fff;
@@ -289,7 +294,8 @@ p.m-logo {
 	text-shadow: 2px 2px 3px #000000;
 	-webkit-text-shadow: 2px 2px 3px #000000;
 }
-div.slogan {
+div.slogan,
+div.slogan div {
 	font-family: Garamond, Georgia, "Times New Roman", Times, serif;
 	font-size: 30px;
 	color: #fff;
@@ -301,14 +307,14 @@ div.slogan {
 	
 /* Phone */
 /* positioning and box model styling go here */
-@media only screen and (min-width: 768px) {
+
 	#phone-number {
 		position: absolute;
 		top: 70px;
 		right: 0;
 		z-index: 100;
 	}
-}
+
 /* font styling goes here */
 #phone-number div {
 	font-size: 36px;
@@ -320,7 +326,8 @@ div.slogan {
 	text-shadow: 2px 2px 3px #000000;
 	-webkit-text-shadow: 2px 2px 3px #000000;
 }
-div.tagline2 {
+div.tagline2,
+div.tagline2 div {
 	margin-bottom: 2px;	
 }
 #m-phone-number {
@@ -384,6 +391,9 @@ filter: none \0/;
 	}
 	#logo {
 		padding: 10px;
+		position: relative;
+		top: auto;
+		left: auto;
 	}
 	#logo a, #logo a:hover, #logo a div, #logo a:hover div {
 		text-align:center;
@@ -391,6 +401,11 @@ filter: none \0/;
 	}
 	div.slogan {
 		text-align: center;	
+	}
+	div#phone-number {
+		position: relative;
+		left: auto;
+		top: auto;
 	}
 	#header-image-container {
 		height: auto;
@@ -441,9 +456,10 @@ ul#nav {
 	padding: 0;
 	width:auto;
 	display: inline-block;
-	background-image: url("gfx/ulNavBG.jpg");
+	background-image: url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/ulNavBG.jpg");
 	border: solid #000000;
 	border-width: 0 1px 1px 1px;
+
 	box-shadow: 0 1px 2px -1px #FFFFFF;
 	-webkit-box-shadow: 0 1px 2px -1px #FFFFFF;
 }
@@ -485,7 +501,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		white-space: nowrap;
 		text-transform: capitalize;
 		color: #b5b5b5;
-		background-image: url("gfx/ulNavLiAbg.png");
+		background-image: url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/ulNavLiAbg.png");
 		text-shadow: 0px 1px 0 #222222;
 		-webkit-text-shadow: 0px 1px 0 #222222;
 	}
@@ -500,7 +516,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 	
 /* start second level nav items */
 		ul#nav li ul { /* second-level lists */
-			background-image: url("gfx/ulNavBG.jpg");
+			background-image: url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/ulNavBG.jpg");
 			position: absolute;
 			width: 220px;
 			left: -999em; /* using left instead of display to hide menus because display: none isnt read by screen readers */
@@ -601,7 +617,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 		cursor:pointer;
 		margin:6px auto;
 		z-index: 800;
-		background-image:url("gfx/icon-menu.png");
+		background-image:url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/icon-menu.png");
 		background-repeat:no-repeat;
 		background-position:top center;
 		z-index:900;
@@ -824,7 +840,8 @@ select {
 label {
 	font: regular 12px/1 Arial, Helvetica, sans-serif;
 }
-.astrix {
+.astrix,
+.required:after {
 	color: 	#9f0000;
 }
 input[type="text"],
@@ -846,12 +863,12 @@ select option {}
 textarea {}
 input[type="submit"],
 input[type="reset"] {
-	background-image: url("gfx/ctaButBG.jpg");
+	background-image: url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/ctaButBG.jpg");
     border: 3px solid #333333;
     box-shadow: 0 0 4px -1px #000000 inset;
 	-webkit-box-shadow: 0 0 4px -1px #000000 inset;
     color: #DDDDDD;
-    font: 18px/45px Arial,Helvetica,sans-serif;
+    font: 18px Arial,Helvetica,sans-serif;
     height: auto;
     text-align: center;
     text-shadow: -1px -1px 1px #333333;
@@ -987,7 +1004,7 @@ div.unit-calc li.unit-menu ul.unit-type li a:hover {
     display:inherit;
 }
 .widget-button{
-	background-image: url("gfx/ctaButBG.jpg");
+	background-image: url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/ctaButBG.jpg");
     border: 5px solid #333333;
     box-shadow: 0 0 4px -1px #000000 inset;
 	-webkit-box-shadow: 0 0 4px -1px #000000 inset;
@@ -1049,7 +1066,7 @@ div.widget-button:active {
 	height: 46px;
 	display: block;
 	margin-bottom: 7px;
-	background: #ddd url("gfx/back-to-top.png") no-repeat center center;
+	background: #ddd url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/back-to-top.png") no-repeat center center;
 	/* rounded corners */
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
@@ -1115,7 +1132,7 @@ a.m-click-map span {
 	overflow:hidden;
 	text-align:center;
 	margin:0 auto;
-	background-image: url("gfx/mobile-panel-icons.png");
+	background-image: url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/mobile-panel-icons.png");
 	background-repeat:no-repeat;
 	display:block;
 	padding:0px;
@@ -1459,26 +1476,27 @@ div.Events_item_desc {
 }
 #FAQ_category_list > li > a,
 #FAQ_category_list > li > a:visited {
-    background-color: red; /* replace with theme color */
-    border-radius: 10px 10px 10px 10px;
-    font-family: Arial, Helvetica, sans-serif; /* replace with theme fonts */
-    font-size: 21px;
+    background: none;
+    background-image: url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/ctaButBG.jpg");
+    border: 5px solid #333333;
+    box-shadow: 0 0 4px -1px #000000 inset;
+	-webkit-box-shadow: 0 0 4px -1px #000000 inset;
+    color: #DDDDDD;
+    font: bold 18px/45px Arial,Helvetica,sans-serif;
     height: auto;
-    line-height: 40px;
     text-align: center;
+    text-shadow: -1px -1px 1px #333333;
+	-webkit-text-shadow: -1px -1px 1px #333333;
     width: auto;
-    z-index: 1001;
-    color: #fff;
-    border: none;
 }
 #FAQ_category_list > li > a:hover,
-#FAQ_category_list > li > a:focus,
 #FAQ_category_list > li > a:active {
 	cursor:pointer;
-	box-shadow: 0 0 10px #000000 inset;
-	-webkit-box-shadow: 0 0 10px #000000 inset;
-	background: red; /* replace with theme color */
-    filter: progid:DXImageTransform.Microsoft.gradient( enabled=false );
+	background: none;
+	filter: none;
+	background-image: url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/ctaButBG.jpg");
+	box-shadow: 0 0 4px 2px #000000 inset;
+	-webkit-box-shadow: 0 0 4px 2px #000000 inset;
 }
 ul#FAQ_category_list span {
 	margin: 0 12px 24px;
@@ -1490,6 +1508,8 @@ div#jobs-module ul {
     margin: 0;
     padding: 0;
 }
+#jobs-module li .jobs-title,
+#jobs-module li .jobs-title:hover,
 .jobs-title,
 .jobs-title:hover {
     background: none;
@@ -1497,33 +1517,49 @@ div#jobs-module ul {
 	font-family: Arial, Helvetica, sans-serif; /* replace with theme fonts */
 	font-size: 24px;
 	padding-left: 0px;
-	color: #E40A0A; /* replace with theme color */
+	color: #9f0000; /* replace with theme color */
+	filter: none;
 }
-.jobs-title a:hover,
-.jobs-title a:focus,
-.jobs-title a:active {
-	text-decoration: underline;
+#jobs-module li .jobs-title a,
+.jobs-title a {
+	font-family: Arial, Helvetica, sans-serif; /* replace with theme fonts */
+	font-size: 24px;
+	padding-left: 0px;
+	color: #9f0000; /* replace with theme color */
+}
+#jobs-module li .jobs-title a:hover,
+#jobs-module li .jobs-title a:active {
+	text-decoration: none;
 }
 .jobs-apply a {
-    background-color: #E40A0A; /* replace with theme color */
-    border-radius: 10px 10px 10px 10px;
-    font-family: Arial, Helvetica, sans-serif;/* replace with theme fonts */
-    font-size: 16px;
+    background-image: url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/ctaButBG.jpg");
+    border: 5px solid #333333;
+    box-shadow: 0 0 4px -1px #000000 inset;
+	-webkit-box-shadow: 0 0 4px -1px #000000 inset;
+    color: #DDDDDD;
+    font: bold 18px/45px Arial,Helvetica,sans-serif;
     height: auto;
-    line-height: 40px;
     text-align: center;
-    width: 100%;
-    z-index: 1001;
-    color: #fff;
-    border: none;
+    text-shadow: -1px -1px 1px #333333;
+	-webkit-text-shadow: -1px -1px 1px #333333;
+    width: auto;
 }
 .jobs-apply a:hover,
-.jobs-apply a:active,
-.jobs-apply a:focus {
+.jobs-apply a:active {
+	text-decoration: none;
     cursor:pointer;
-	box-shadow: 0 0 10px #000000 inset;
-	-webkit-box-shadow: 0 0 10px #000000 inset;
-	background: #E40A0A; /* replace with theme color */
+	box-shadow: 0 0 4px 2px #000000 inset;
+	-webkit-box-shadow: 0 0 4px 2px #000000 inset;
+	background-image: url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/ctaButBG.jpg");
+}
+.jobs-apply a:focus {
+	text-decoration: none;
+}
+div.form-row {
+	margin-bottom: 0px;
+}
+div.form-buttons {
+    margin-top: 20px;
 }
 /* --------------- end Websplanet module fixes --------------- */
 
@@ -1539,7 +1575,7 @@ div.horizontal.callouts div.vertical div.diy-f-spot.callout2 div.diy-f-spot-inne
 	}
 }
 div.horizontal.callouts {
-	background-image:url("gfx/calloutsBG.jpg");
+	background-image:url("http://default-martial-arts.stage-sites.yp.com/templates/bubbles/templates_YPwebsites/styles/m_5/5a/5a4/391/gfx/calloutsBG.jpg");
 	border: 1px solid;
 	border-color: #0f0f0f #3c3e3f transparent #171718;
 	margin-bottom: 15px;
@@ -1597,4 +1633,14 @@ div.horizontal.callouts div.vertical div.diy-f-spot img {
 	max-width: 100%;	
 	display: block;
 	margin: 0 auto;
+}
+div.imgOverlay {
+    display: none;
+}
+#edit-header-image-button {
+	top: auto !important;
+	bottom: 40px !important;
+}
+.click2sms-popup-wrapper .click2sms-popup-form input {
+	width: 50px;
 }
